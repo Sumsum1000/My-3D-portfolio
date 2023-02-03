@@ -6,9 +6,11 @@ export const Home = () => {
     <div className={style["home-container"]}>
       {subjectsList.map((item) => {
         return (
-          <div>
-            <img src={item.src} />
-            {/* <p>{item.name}</p> */}
+          <div className={style["subject-container"]}>
+            <div>
+              <img src={item.src} />
+            </div>
+            <h3>{item.name}</h3>
           </div>
         );
       })}
